@@ -1,3 +1,2 @@
 #!/bin/bash
-ls [[:upper: ]] /tmp/u
-[:upper:]/tmp/u
+[:upper:] /tmp/u
