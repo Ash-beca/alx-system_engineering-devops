@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script displays Best School 10 times
+a=0
+while [ $a -lt 10 ]
+do
+    echo "Best School"
+    ((a++)) #equivalent to $(( a+1 ))
+done
