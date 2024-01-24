@@ -2,7 +2,7 @@ OpenSSH_8.2p1 Ubuntu-4ubuntu0.5, OpenSSL 1.1.1f  31 Mar 2020
 debug1: Reading configuration data /etc/ssh/ssh_config
 debug1: /etc/ssh/ssh_config line 19: include /etc/ssh/ssh_config.d/*.conf matched no files
 debug1: /etc/ssh/ssh_config line 21: Applying options for *
-debug1: Connecting to 54.144.45.183 [54.144.45.183] port 22.
+debug1: Connecting to 100.26.227.167 [100.26.227.167] port 22.
 debug1: Connection established.
 debug1: identity file /root/.ssh/id_rsa type 0
 debug1: identity file /root/.ssh/id_rsa-cert type -1
@@ -21,7 +21,7 @@ debug1: identity file /root/.ssh/id_xmss-cert type -1
 debug1: Local version string SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
 debug1: Remote protocol version 2.0, remote software version OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
 debug1: match: OpenSSH_8.2p1 Ubuntu-4ubuntu0.5 pat OpenSSH* compat 0x04000000
-debug1: Authenticating to 54.144.45.183:22 as 'ubuntu'
+debug1: Authenticating to 100.26.227.167 as 'ubuntu'
 debug1: SSH2_MSG_KEXINIT sent
 debug1: SSH2_MSG_KEXINIT received
 debug1: kex: algorithm: curve25519-sha256
@@ -30,14 +30,14 @@ debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit
 debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
 debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
 debug1: Server host key: ecdsa-sha2-nistp256 SHA256:q0VGU5G96/TWp9yLIuKaVCK+kCUB/dKZ2mMxIB4CiLg
-debug1: Host '54.144.45.183' is known and matches the ECDSA host key.
+debug1: Host '100.26.227.167' is known and matches the ECDSA host key.
 debug1: Found key in /root/.ssh/known_hosts:2
 debug1: rekey out after 134217728 blocks
 debug1: SSH2_MSG_NEWKEYS sent
 debug1: expecting SSH2_MSG_NEWKEYS
 debug1: SSH2_MSG_NEWKEYS received
 debug1: rekey in after 134217728 blocks
-debug1: Will attempt key: /root/.ssh/id_rsa RSA SHA256:G0MKbbk+dlLTBmAqQR2BaLGOKhpQBXXwkBinlq2ZnAI
+debug1: Will attempt key: /root/.ssh/id_rsa RSA  AAAAB3NzaC1yc2EAAAADAQABAAABgQDCMuuiA/z//rzCBSI2kY0wlyJsQTaCUAMqsgHWkGYqfcPhAD7xcnSE1D9ELgQfjMcp8K+ndvvJtYYkyyEgQdg65nOnclWhpLnWsfJNc7vVK86urwIZgQS23ZmEId2jQvW9+GEcaWvg2I/77s5fqoILepTUJkQI9EiaQ9U5bJPibbCPqSmmEpMExq4gT39lFy2xrV+L//55CyhUjonLT3ZtYerjKf89jRAqPOB1ex33GjnTtyQWEFLW51k2Q14vWkWWtCx1p/nq/DXNxBZtr/2NXOpeYHfb/wRdfft2W8XYXkGVesm27uqYXKggOwGlSgyFMXYQ9aL8A01uZBmxdbwbfHHswUwY1ig2Kf9f++OWS9EogG1DsdLKxVJDZg1YR0ssqGcWGWC78XtWT9Zhwg48gvhCu/g+PGa0IBWxnPyvAj6CGAvR9fI8XwloUMNmwPL1Lzv996sePBVI+/zAM1N6NNc6boOC0Fq3+2tWG5BMS6+3S1HQ+ekaVG5WGzENzZc= root@b0b24df20218
 debug1: Will attempt key: /root/.ssh/id_dsa 
 debug1: Will attempt key: /root/.ssh/id_ecdsa 
 debug1: Will attempt key: /root/.ssh/id_ecdsa_sk 
@@ -49,10 +49,10 @@ debug1: kex_input_ext_info: server-sig-algs=<ssh-ed25519,sk-ssh-ed25519@openssh.
 debug1: SSH2_MSG_SERVICE_ACCEPT received
 debug1: Authentications that can continue: publickey
 debug1: Next authentication method: publickey
-debug1: Offering public key: /root/.ssh/id_rsa RSA SHA256:G0MKbbk+dlLTBmAqQR2BaLGOKhpQBXXwkBinlq2ZnAI
-debug1: Server accepts key: /root/.ssh/id_rsa RSA SHA256:G0MKbbk+dlLTBmAqQR2BaLGOKhpQBXXwkBinlq2ZnAI
+debug1: Offering public key: /root/.ssh/id_rsa RSA  AAAAB3NzaC1yc2EAAAADAQABAAABgQDCMuuiA/z//rzCBSI2kY0wlyJsQTaCUAMqsgHWkGYqfcPhAD7xcnSE1D9ELgQfjMcp8K+ndvvJtYYkyyEgQdg65nOnclWhpLnWsfJNc7vVK86urwIZgQS23ZmEId2jQvW9+GEcaWvg2I/77s5fqoILepTUJkQI9EiaQ9U5bJPibbCPqSmmEpMExq4gT39lFy2xrV+L//55CyhUjonLT3ZtYerjKf89jRAqPOB1ex33GjnTtyQWEFLW51k2Q14vWkWWtCx1p/nq/DXNxBZtr/2NXOpeYHfb/wRdfft2W8XYXkGVesm27uqYXKggOwGlSgyFMXYQ9aL8A01uZBmxdbwbfHHswUwY1ig2Kf9f++OWS9EogG1DsdLKxVJDZg1YR0ssqGcWGWC78XtWT9Zhwg48gvhCu/g+PGa0IBWxnPyvAj6CGAvR9fI8XwloUMNmwPL1Lzv996sePBVI+/zAM1N6NNc6boOC0Fq3+2tWG5BMS6+3S1HQ+ekaVG5WGzENzZc= root@b0b24df20218
+debug1: Server accepts key: /root/.ssh/id_rsa RSA  AAAAB3NzaC1yc2EAAAADAQABAAABgQDCMuuiA/z//rzCBSI2kY0wlyJsQTaCUAMqsgHWkGYqfcPhAD7xcnSE1D9ELgQfjMcp8K+ndvvJtYYkyyEgQdg65nOnclWhpLnWsfJNc7vVK86urwIZgQS23ZmEId2jQvW9+GEcaWvg2I/77s5fqoILepTUJkQI9EiaQ9U5bJPibbCPqSmmEpMExq4gT39lFy2xrV+L//55CyhUjonLT3ZtYerjKf89jRAqPOB1ex33GjnTtyQWEFLW51k2Q14vWkWWtCx1p/nq/DXNxBZtr/2NXOpeYHfb/wRdfft2W8XYXkGVesm27uqYXKggOwGlSgyFMXYQ9aL8A01uZBmxdbwbfHHswUwY1ig2Kf9f++OWS9EogG1DsdLKxVJDZg1YR0ssqGcWGWC78XtWT9Zhwg48gvhCu/g+PGa0IBWxnPyvAj6CGAvR9fI8XwloUMNmwPL1Lzv996sePBVI+/zAM1N6NNc6boOC0Fq3+2tWG5BMS6+3S1HQ+ekaVG5WGzENzZc= root@b0b24df20218
 debug1: Authentication succeeded (publickey).
-Authenticated to 54.144.45.183 ([54.144.45.183]:22).
+Authenticated to 100.26.227.167 ([100.26.227.167]:22).
 debug1: channel 0: new [client-session]
 debug1: Requesting no-more-sessions@openssh.com
 debug1: Entering interactive session.
