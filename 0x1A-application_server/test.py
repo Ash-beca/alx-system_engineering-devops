@@ -8,7 +8,7 @@ ssh-add ~/.ssh/name of the file
 
 #username and IP Address
 
-ssh ubuntu@your IP Adress
+ssh ubuntu@100.26.227.167	
 
 
 name of the file: file you save your ssh key
